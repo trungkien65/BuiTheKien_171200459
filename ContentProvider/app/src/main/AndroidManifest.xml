@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.contentprovider35">
+    <uses-permission android:name="android,permission.READ-CONTACTS" />
+    <uses-permission android:name="android,permission.READ—CALL—LOG" />
+    <uses-permission android:name="android.permission.READ—EXTERNAL—STORAGE" />
+    <uses-permission android:name="com.android.browser.permission.READ—HISTORY—BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE-CONTACTS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iC—launcher"
+        android:label="@string/apP—name"
+        android:roundlcon="@mipmap/iC—launcher—round"
+        android:supportsRtl="true"
+        android:theme="@ style/AppTheme">
+        <activity android:name=".singleRowContact"/activity>
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" /> </intent-filter>
+    </activity> </application>
+</manifest> 

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/EditTextMaSV"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:hint="Enter Your ID..."></EditText>
+
+    <EditText
+        android:id="@+id/EditTextHoTen"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/EditTextMaSV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:hint="Enter your Name">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditTextNamSinh"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/EditTextHoTen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your Birthday"
+        />
+
+    <Button
+        android:id="@+id/buttonInsert"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/EditTextNamSinh"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="49dp"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/EditTextNamSinh"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="49dp"
+        android:layout_toEndOf="@+id/buttonInsert"
+        android:layout_toRightOf="@+id/buttonInsert"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/EditTextNamSinh"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/buttonUpdate"
+        android:layout_toRightOf="@+id/buttonUpdate"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/buttonLoad"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+
+        android:layout_below="@+id/EditTextNamSinh"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_toEndOf="@+id/buttonDelete"
+        android:layout_toRightOf="@+id/buttonDelete"
+        android:text="Load" />
+
+    <ListView
+        android:id="@+id/ListViewSinhVien"
+        android:layout_width="417dp"
+        android:layout_height="331dp"
+        android:layout_below="@+id/buttonDelete"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_marginBottom="51dp" />
+
+</RelativeLayout>
